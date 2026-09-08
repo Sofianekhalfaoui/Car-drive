@@ -1,0 +1,10 @@
+{
+  "appId": "com.velocity.citydrive",
+  "appName": "VELOCITY City Drive",
+  "webDir": "out",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "",
+    "cleartext": true
+  }
+}

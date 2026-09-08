@@ -1,0 +1,28 @@
+{
+  "name": "velocity-city-drive",
+  "version": ".1.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 300",
+    "build": "next build",
+    "export": "next export -o out",
+    "start": "next start -p 300",
+    "postexport": "cp -r public/* out/ || true",
+    "capacitor:init": "npx cap init velocity.city.drive com.velocity.citydrive --web-dir=out",
+    "capacitor:add-android": "npx cap add android",
+    "capacitor:copy": "npx cap copy",
+    "capacitor:open-android": "npx cap open android"
+  },
+  "dependencies": {
+    "next": "13.4.",
+    "react": "18.2.",
+    "react-dom": "18.2.",
+    "three": "^.158.",
+    "@react-three/fiber": "^8.12.",
+    "@react-three/rapier": "^4.4.",
+    "@capacitor/core": "^6.."
+  },
+  "devDependencies": {
+    "typescript": "^5.."
+  }
+}
